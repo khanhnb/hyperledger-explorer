@@ -1,2 +1,3 @@
 blockchain-explorer/*
-blockchain-explorer
+blockchain-explorer/
+.DS_Store
