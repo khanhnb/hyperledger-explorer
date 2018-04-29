@@ -1,0 +1,20 @@
+version: '2.1'
+networks:
+  byfn:
+    name: net_byfn
+services:
+  hyperledger-explorer:
+    container_name: hyperledger-explorer
+    image: hyperledger-explorer-img
+    build: .
+    working_dir: /explorer/src
+    volumes:
+      - ./scripts:/explorer/src/scripts
+      - ./blockchain-explorer:/explorer/src/blockchain-explorer
+      - /Users/clark/Desktop/fabric-samples/first-network/crypto-config:/crypto-config
+    ports:
+      - 8080:8080
+    command: /bin/sh ./scripts/script.sh
+    tty: true
+    networks:
+      - byfn
