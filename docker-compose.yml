@@ -1,11 +1,11 @@
 version: '2.1'
 networks:
   byfn:
-    name: net_byfn
+    name: net_byfn #Name of your Hyperledger Fabric's network
 services:
   hyperledger-explorer:
     container_name: hyperledger-explorer
-    image: hyperledger-explorer-img
+    image: khanhnb/hyperledger-explorer
     build: .
     working_dir: /explorer/src
     volumes:

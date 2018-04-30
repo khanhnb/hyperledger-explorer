@@ -75,8 +75,9 @@ echo '[i] start running mysqld'
 exec /usr/bin/mysqld --user=mysql --console &
 
 cd blockchain-explorer
-echo '[i] npm rebuild'
-npm rebuild
+pwd
+echo '[i] npm install'
+npm install
 rm -rf /tmp/fabric-client-kvs_peerOrg*
 echo '[i] start explorer'
 node main.js
