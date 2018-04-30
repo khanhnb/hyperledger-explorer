@@ -11,7 +11,7 @@ services:
     volumes:
       - ./scripts:/explorer/src/scripts
       - ./blockchain-explorer:/explorer/src/blockchain-explorer
-      - /Users/clark/Desktop/fabric-samples/first-network/crypto-config:/crypto-config
+      - [path-to-crypto-config]/crypto-config:/crypto-config
     ports:
       - 8080:8080
     command: /bin/sh ./scripts/script.sh
