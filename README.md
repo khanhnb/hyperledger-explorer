@@ -6,8 +6,9 @@ This project will help you deploy Explorer for your Hyperledger Fabric network e
 
 ### Prerequisites
 
-* docker [https://www.docker.com/community-edition]
-* docker-compose [https://docs.docker.com/compose/]
+* docker [https://www.docker.com/community-edition].
+* docker-compose [https://docs.docker.com/compose/].
+* A running Hyperledger-farbic network. For example [https://github.com/hyperledger/fabric-samples/tree/release-1.1/first-network].
 
 ## Deployment
 
