@@ -16,14 +16,7 @@ This project will help you deploy Explorer for your Hyperledger Fabric network e
 ```
 git clone https://github.com/khanhnb/hyperledger-explorer.git
 ```
-* Clone Hyperledger-explorer.
 
-```
-cd hyperledger-explorer
-git clone https://github.com/hyperledger/blockchain-explorer.git
-cd blockchain-explorer
-git reset --hard 2f642c084ff156cf0ac1e8c3ff1281e57869e353 # The latest commit is a newer version of Hyperledger-explorer, but it's under the developerment.
-```
 * Update docker-compose.yaml.
   * Replace your path to crypto-config folder.
   * Replace your network of your Fabric network.
